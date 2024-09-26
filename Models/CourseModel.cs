@@ -6,6 +6,7 @@ namespace WebApplication4.Models
     {
         //fields: protected or private attributes
         //        when validation or restrictions are needs
+        public int Id;  
         private string _courseCode;
         private string _courseName;
 
@@ -37,6 +38,12 @@ namespace WebApplication4.Models
             set => _courseName = value.Length >= 4 ? value : "Course";
         }
 
+        public CourseModel(int id, string courseName, string courseCode) {
+
+            Id = id;
+            CourseName = courseName;
+            CourseCode = courseCode;
+        }
     }
+
 }
-x

@@ -1,0 +1,46 @@
+﻿<!--
+    to add a model reference    
+        what is a model reference?
+            requirement when you are working with a model in a view
+-->
+
+@model IEnumerable<CourseModel>
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Course Name</th>
+            <th>Course Code</th>
+         </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <th>Id</th>
+            <th>Course Code</th>
+            <th>Course Name</th>
+        </tr>
+    </tfoot>
+    <tbody>
+        @{
+            foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.CourseCode</td>
+                    <td>
+ <a asp-controller="Course" asp-action="Details" asp-route-id="@item.Id">
+                        @item.CourseName
+                        </a>
+                    </td>
+                </tr>
+                
+            }          
+
+            }
+        </tbody>
+
+</table>
+
