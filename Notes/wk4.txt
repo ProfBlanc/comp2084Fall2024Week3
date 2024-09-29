@@ -1,0 +1,99 @@
+Already created a  CourseMode
+	id, name, code
+
+Create series of web pages
+	/Course => list of courses
+	/Course/1	=> display course with id = 1
+
+Why? How we can create objects
+introduce / learn LINQ simple example
+reinforces working with Controller/View
+introduces Model interaction
+Steps
+	-created mode
+	-created controller
+	-in Controller: create a list of Courses
+	as field  
+	overview send this list of courses as model to View	2) in view, reference this course model. using a table
+	display the course details for index
+
+	3) for Details, get a Course by id => display it
+	  as a Model to view
+	4) add method Program(string,string) get a Course object by code and/or name
+		
+	To-Do
+	
+
+
+
+List<DataType> name = new List<Dataype>([starting capacity]);
+
+List<DataType> name = new List<DataType>(){add elements}
+	//empty:no Items
+	//capacity of 4
+	// cap increases by x2 (doubles)
+
+List<int>
+List<string>
+List<float>
+
+
+
+access a specific Item
+name[index]
+
+
+L anguage
+INtegrated
+Query
+
+
+lambda epression
+	arrow function
+		method w/o a name
+
+	methodName(params){ return value}
+	
+	params => value
+
+	predicate  lambda expression/arrow function
+		that returns a Boolean value
+
+
+
+
+In the Details view
+	Display the details of the one course
+	-remember to model
+	- @ is your friend
+
+
+
+
+create the method Program
+	-add a View
+	-method accepts 2 string arguments
+		- both are optional
+
+
+
+?code=comp2084&name=Intro+to+OOP+using+Java
+
+
+
+
+
+View
+	empty	search for view file with same name
+	string	search for view file with specified name
+	non-string pass info as model
+	string, non-string search for view file w specified
+			    name and pass info as model
+
+
+
+
+
+
+
+

@@ -32,7 +32,26 @@ namespace WebApplication4.Controllers
         // GET: CourseController/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+
+            // var course = courses[id];
+            var course = courses.First(c => c.Id == id);
+
+            ViewData["Title"] = "Course Details :" + course.CourseCode;
+
+            return View(course);
+        }
+        public ActionResult Program(string code = "", string name = "") {
+
+            if (code.Length == 0 && name.Length == 0) {
+
+                return RedirectToAction("Index");
+
+            }
+
+            var coursesReturned = courses
+                .FindAll(c => c.CourseName == name || c.CourseCode == code );
+
+            return View("Index", coursesReturned);
         }
 
         

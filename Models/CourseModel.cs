@@ -1,4 +1,5 @@
-﻿using System.Text.RegularExpressions;
+﻿using System.ComponentModel;
+using System.Text.RegularExpressions;
 
 namespace WebApplication4.Models
 {
@@ -6,12 +7,16 @@ namespace WebApplication4.Models
     {
         //fields: protected or private attributes
         //        when validation or restrictions are needs
-        public int Id;  
+        
+        [DisplayName("Course Id")]
+        public int Id { get; set; } 
+        
         private string _courseCode;
         private string _courseName;
 
 
         //Properties: public wrappers for fields
+        [DisplayName("Course Code")]
         public string CourseCode {
             get { return _courseCode; }
             set {
@@ -32,7 +37,7 @@ namespace WebApplication4.Models
                 }
                     }
         }
-
+        [DisplayName("Course Name")]
         public string CourseName {
             get => _courseName;
             set => _courseName = value.Length >= 4 ? value : "Course";
