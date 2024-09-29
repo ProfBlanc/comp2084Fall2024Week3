@@ -1,0 +1,46 @@
+
+private int varName;
+
+public int getVarName(){}
+public int setVarName(int val){}
+
+__________________________________________
+
+
+private int _varName;
+
+
+public int VarName{
+	set{}
+	get{}
+}
+
+
+
+
+Project 1
+working with various features of Controller
+* working with custom models*
+
+Home
+	Index
+	AboutUs
+	Important Dates
+Programs
+	Computers
+	Nursing
+	Firefighting
+Admissions
+	Apply
+	Qualifications
+
+
+
+
+Project 2
+Working with Authentication and Authorization
+
+
+BrainStorm E-Commerce Idea
+Project 3: Class project for the semester
+ 
